@@ -1,0 +1,18 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+   <bean id="student" class="com.chopchop.Employee">
+       <property name="name" value="Ganesh" />
+       <property name="age" value="23" />
+   </bean>
+    <bean id="pro" class="com.chopchop.controller" >
+        <property name="employee" ref="student"/>
+    </bean>
+
+    <bean id="employee" class="com.chopchop.Student" >
+        <property name="age" value="25"/>
+        <property name="name" value="Sanj" />
+    </bean>
+
+</beans>
